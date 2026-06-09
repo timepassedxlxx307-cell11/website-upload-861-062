@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>搜索影片 - 高清影视聚合</title>
+  <meta name="description" content="搜索高清电影、电视剧、动漫、综艺等影视内容，按片名、类型、年份、地区查找可在线观看作品。">
+  <meta name="keywords" content="高清视频,在线观看,免费影视,国产电影,电视剧,动漫,综艺,影视聚合,视频网站,免费观看,影视搜索">
+  <link rel="stylesheet" href="./assets/styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="./index.html" aria-label="高清影视聚合">
+      <span class="logo-mark">影</span>
+      <span>高清影视聚合</span>
+    </a>
+    <nav class="desktop-nav" aria-label="主导航">
+      <a href="./index.html">首页</a>
+      <a href="./categories.html">分类</a>
+      <a href="./ranking.html">排行</a>
+      <a href="./search.html">搜索</a>
+    </nav>
+    <form class="header-search" data-site-search>
+      <input type="search" name="q" placeholder="搜索影片、类型、地区" aria-label="搜索影片">
+      <button type="submit">搜索</button>
+    </form>
+    <button class="mobile-toggle" data-mobile-toggle aria-label="打开导航">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" data-mobile-menu>
+    <div class="mobile-menu-panel">
+      <a href="./index.html">首页</a>
+      <a href="./categories.html">分类</a>
+      <a href="./ranking.html">排行</a>
+      <a href="./search.html">搜索</a>
+      <form class="header-search" data-site-search>
+        <input type="search" name="q" placeholder="搜索影片、类型、地区" aria-label="搜索影片">
+        <button type="submit">搜索</button>
+      </form>
+    </div>
+  </div>
+</header>
+<main class="main-content">
+  <section class="page-hero container">
+    <nav class="breadcrumbs"><a href="./index.html">首页</a><span>/</span><span>搜索</span></nav>
+    <h1 class="page-title">搜索影片</h1>
+    <p class="page-subtitle">输入片名、地区、年份、类型或标签，快速查找想看的高清影视内容。</p>
+    <form class="search-panel" data-search-page-form>
+      <input type="search" data-search-page-input placeholder="输入关键词" aria-label="搜索关键词">
+      <button class="search-button" type="submit">搜索</button>
+    </form>
+  </section>
+  <section class="section container">
+    <div class="movie-grid" data-search-results></div>
+    <div class="empty-state" data-search-empty>没有找到匹配的影片</div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>
+      <div class="footer-brand">高清影视聚合</div>
+      <div>高清视频 · 国产影视 · 动漫综艺 · 流畅观看</div>
+    </div>
+    <div>© 高清影视聚合</div>
+  </div>
+</footer>
+<script src="./assets/search-data.js"></script>
+<script src="./assets/app.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?95df08bc498ee0333203841fd6fee1eb";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>

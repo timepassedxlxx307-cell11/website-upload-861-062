@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>影片搜索_天天国产影院</title>
+  <meta name="description" content="搜索日韩大片、国产高清电影、热播电视剧排行榜和在线播放影视资源。">
+  <meta name="keywords" content="手机免费在线观看,日韩大片,国产高清电影,热播电视剧排行榜,天天国产影院,在线播放,韩国电影,日本动画,影片搜索">
+  <link rel="stylesheet" href="assets/style.css">
+  
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+  
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html" aria-label="天天国产影院">
+      <span class="brand-mark">影</span>
+      <span class="brand-name">天天国产影院</span>
+    </a>
+    <nav class="desktop-nav" aria-label="主导航">
+      <a class="nav-link" href="index.html">首页</a> <a class="nav-link is-active" href="categories.html">分类</a> <a class="nav-link" href="rankings.html">排行榜</a> <a class="nav-link" href="region-domestic.html">国产</a> <a class="nav-link" href="region-japan-korea.html">日韩</a> <a class="nav-link" href="region-europe-america.html">欧美</a>
+    </nav>
+    <form class="header-search" action="search.html" method="get" data-search-form>
+      <input type="search" name="q" placeholder="搜索影片、类型、地区" aria-label="搜索影片">
+      <button type="submit">搜索</button>
+    </form>
+    <button class="menu-toggle" type="button" data-menu-button aria-label="菜单">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+  <div class="mobile-panel" data-mobile-panel>
+    <form action="search.html" method="get" data-search-form>
+      <input type="search" name="q" placeholder="搜索影片" aria-label="搜索影片">
+      <button type="submit">搜索</button>
+    </form>
+    <nav aria-label="移动导航">
+      <a href="index.html">首页</a> <a href="categories.html">分类</a> <a href="rankings.html">排行榜</a> <a href="region-domestic.html">国产</a> <a href="region-japan-korea.html">日韩</a> <a href="region-europe-america.html">欧美</a>
+    </nav>
+  </div>
+</header>
+  
+<main class="page-main">
+  <section class="page-hero small">
+    <p class="eyebrow">影片搜索</p>
+    <h1>搜索电影电视剧</h1>
+    <p>输入片名、地区、类型、年份或关键词，快速找到想看的影视内容。</p>
+    <form class="page-search big" action="search.html" method="get" data-live-search-form>
+      <input type="search" name="q" placeholder="输入影片名或关键词" aria-label="输入影片名或关键词" data-live-search-input>
+      <button type="submit">搜索</button>
+    </form>
+  </section>
+  <section class="section">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow dark">搜索结果</p>
+        <h2 data-search-title>热门推荐</h2>
+      </div>
+    </div>
+    <div class="movie-grid full" data-search-results></div>
+  </section>
+</main>
+  
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <a class="footer-brand" href="index.html">天天国产影院</a>
+      <p>天天国产影院提供手机免费在线观看最新日韩大片，国产高清热播电影电视剧排行榜，支持手机电脑播放，每日更新热门影视资源</p>
+    </div>
+    <div class="footer-links">
+      <a href="category-hot.html">热播推荐</a><a href="category-domestic.html">国产高清</a><a href="category-jk.html">日韩大片</a><a href="category-series.html">电视剧场</a><a href="category-movie.html">电影精选</a><a href="category-suspense.html">悬疑犯罪</a><a href="category-love.html">爱情剧情</a><a href="category-comedy.html">喜剧治愈</a>
+      <a href="rankings.html">排行榜</a>
+      <a href="search.html">搜索</a>
+    </div>
+  </div>
+</footer>
+  <script src="assets/search-index.js"></script>
+  <script src="assets/search.js" defer></script>
+  <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?95df08bc498ee0333203841fd6fee1eb";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>

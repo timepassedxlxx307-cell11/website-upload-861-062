@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>搜索影视-手机影视网</title>
+  <meta name="description" content="通过片名、类型、地区、年份搜索高清影视内容，快速进入详情页在线播放。">
+  <meta name="keywords" content="国产影视在线免费观看大全_支持超清画质播放-手机影视网,国产,视频,免费,在线观看,高清,影视大全,搜索,筛选">
+  <link rel="stylesheet" href="assets/css/original.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="nav-shell">
+    <a class="logo" href="index.html" aria-label="手机影视网">
+      <span class="logo-mark">影</span>
+      <span>手机影视网</span>
+    </a>
+    <button class="mobile-toggle" type="button" aria-label="打开菜单" data-mobile-toggle>
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="nav-links" data-nav-links>
+      <a class="nav-link" href="index.html">首页</a><a class="nav-link" href="categories.html">分类</a><a class="nav-link" href="ranking.html">排行榜</a><a class="nav-link active" href="search.html">搜索</a><a class="nav-link" href="category/hot-selection.html">热门精选</a><a class="nav-link" href="category/hd-cinema.html">高清影院</a><a class="nav-link" href="category/series-zone.html">剧集专区</a><a class="nav-link" href="category/new-release.html">最新上线</a>
+    </nav>
+    <form class="header-search" action="search.html" method="get" data-header-search data-search-form>
+      <input type="search" name="q" placeholder="搜索影片、类型、地区">
+      <button type="submit">搜索</button>
+    </form>
+  </div>
+</header>
+<main data-search-page>
+  <section class="page-hero">
+    <div class="container">
+      <span class="kicker">全站搜索</span>
+      <h1>搜索影视内容</h1>
+      <p>输入片名、类型、地区、年份或关键词，快速筛选并进入详情页播放。</p>
+      <div class="search-panel">
+        <input type="search" placeholder="搜索影片、类型、地区" data-search-input>
+        <select data-search-category>
+          <option value="">全部分类</option>
+          <option value="热门精选">热门精选</option>
+<option value="高清影院">高清影院</option>
+<option value="剧集专区">剧集专区</option>
+<option value="最新上线">最新上线</option>
+<option value="悬疑惊悚">悬疑惊悚</option>
+<option value="爱情家庭">爱情家庭</option>
+<option value="动作犯罪">动作犯罪</option>
+<option value="奇幻科幻">奇幻科幻</option>
+<option value="动漫动画">动漫动画</option>
+<option value="综艺纪实">综艺纪实</option>
+<option value="经典佳片">经典佳片</option>
+<option value="环球影库">环球影库</option>
+        </select>
+        <select data-search-sort>
+          <option value="default">综合排序</option>
+          <option value="year">按年份</option>
+          <option value="title">按名称</option>
+        </select>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="movie-grid compact" data-search-results></div>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>手机影视网 · 国产影视在线免费观看大全</div>
+    <div class="footer-links">
+      <a href="index.html">首页</a>
+      <a href="categories.html">分类</a>
+      <a href="ranking.html">排行榜</a>
+      <a href="search.html">搜索</a>
+    </div>
+  </div>
+</footer>
+<script defer src="assets/js/site.js"></script>
+<script src="./data/movies.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?95df08bc498ee0333203841fd6fee1eb";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
